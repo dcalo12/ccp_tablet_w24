@@ -174,7 +174,7 @@ img {
 
 video {
     /* max-height: 75%; */
-    max-width: 100%;
+    min-width: 100%;
 } 
 
 /* NEW CONTENT ADDED FOR COLLAPSIBLE NAV MENU  */
