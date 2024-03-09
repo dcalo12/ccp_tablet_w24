@@ -177,6 +177,13 @@ video {
     max-width: 100%;
 } 
 
+/* NEW CONTENT ADDED FOR COLLAPSIBLE NAV MENU  */
+
+.collapsible-menu {
+    visibility: hidden;
+    /* position: absolute; */
+}
+
 /* 
 Media Query pulled from this site, still not solid on these:
 https://css-tricks.com/introduction-reduced-motion-media-query/ 
@@ -186,4 +193,95 @@ https://css-tricks.com/introduction-reduced-motion-media-query/
     .vid {
       animation: none;
     }
-  }
+}
+
+@media screen and (min-width: 800px) {
+    
+    img {
+        /* max-height: 100%; */
+        /* max-height: 200%; */
+        min-width: 100%;
+        /* max-width: 200% */
+        border: solid #9900CC 3px;
+        border-radius: 9px;
+        /* margin: 10px 10px 10px 10px; */
+    }
+    
+    video {
+        max-height: 75%;
+        max-width: 100%;
+        border: solid #9900CC 3px;
+        border-radius: 9px;
+    } 
+
+    body{
+        background-color: #B8B8B8;
+    }
+
+    /* COLLAPSIBLE NAV MENU  */
+    
+    .menu-content {
+        max-height: 0;
+        overflow: hidden;
+        /* font-family: 'Oswald', sans-serif;  */
+        /* padding: 0 0 0 50px; */
+    }
+
+    /* COLLAPSIBLE MENU  */
+
+    .collapsible-menu {
+        visibility: visible;
+        background-color: #ECFF4D;
+        /* padding: 0px 30px; */
+        /* border-bottom: 3px solid #CDE700; */
+        /* box-shadow: 1px 2px 3px rgba(0,0,0,0.2); */
+    }
+
+    .collapsible-menu ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .collapsible-menu li {
+        border: solid 3px #9900CC;
+    }
+
+    .collapsible-menu a {
+        display: block;
+        /* display: inline; */
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    .collapsible-menu label {
+        /* font-family: 'Sedgwick Ave Display', cursive; */
+        font-size: 150%;
+        display: block;
+        cursor: pointer;
+        /* background: url(menu.png) no-repeat left center; */
+        padding: 10px 10px 10px 10px;
+        border: solid 3px #9900CC;
+    }
+
+    input#menu {
+        display: none;
+    }
+
+    /* input:checked +label {
+        background-image: url(close.png);
+    }
+
+    input:checked ~ label {
+        background-image: url(close.png); 
+    } */
+
+    input:checked ~ .menu-content {
+        max-height: 100%;
+    }
+
+    /* HIDING OLD NAV ELEMENTS  */
+
+    nav ul li, nav{
+        display: none;
+    }
+}
