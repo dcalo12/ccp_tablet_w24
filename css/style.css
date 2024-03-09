@@ -181,7 +181,7 @@ video {
 
 .collapsible-menu {
     visibility: hidden;
-    /* position: absolute; */
+    position: absolute;
 }
 
 /* 
@@ -228,6 +228,7 @@ https://css-tricks.com/introduction-reduced-motion-media-query/
     .collapsible-menu {
         visibility: visible;
         background-color: #ECFF4D;
+        position: static;
     }
 
     .collapsible-menu ul {
@@ -256,14 +257,6 @@ https://css-tricks.com/introduction-reduced-motion-media-query/
     input#menu {
         display: none;
     }
-
-    /* input:checked +label {
-        background-image: url(close.png);
-    }
-
-    input:checked ~ label {
-        background-image: url(close.png); 
-    } */
 
     input:checked ~ .menu-content {
         max-height: 100%;
