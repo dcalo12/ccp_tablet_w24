@@ -208,7 +208,7 @@ https://css-tricks.com/introduction-reduced-motion-media-query/
     }
     
     video {
-        max-height: 75%;
+        /* max-height: 75%; */
         max-width: 100%;
         border: solid #9900CC 3px;
         border-radius: 9px;
@@ -223,18 +223,11 @@ https://css-tricks.com/introduction-reduced-motion-media-query/
     .menu-content {
         max-height: 0;
         overflow: hidden;
-        /* font-family: 'Oswald', sans-serif;  */
-        /* padding: 0 0 0 50px; */
     }
-
-    /* COLLAPSIBLE MENU  */
 
     .collapsible-menu {
         visibility: visible;
         background-color: #ECFF4D;
-        /* padding: 0px 30px; */
-        /* border-bottom: 3px solid #CDE700; */
-        /* box-shadow: 1px 2px 3px rgba(0,0,0,0.2); */
     }
 
     .collapsible-menu ul {
@@ -248,17 +241,14 @@ https://css-tricks.com/introduction-reduced-motion-media-query/
 
     .collapsible-menu a {
         display: block;
-        /* display: inline; */
         padding: 10px;
         text-decoration: none;
     }
 
     .collapsible-menu label {
-        /* font-family: 'Sedgwick Ave Display', cursive; */
         font-size: 150%;
         display: block;
         cursor: pointer;
-        /* background: url(menu.png) no-repeat left center; */
         padding: 10px 10px 10px 10px;
         border: solid 3px #9900CC;
     }
